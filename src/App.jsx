@@ -714,6 +714,7 @@ export default function App() {
 
             <div style={{ flex: 1, background: COLORS.card, overflow: "hidden" }}>
               <JobDetail
+                key={selectedJob?.id}
                 job={selectedJob}
                 onWriteCoverLetter={() => setShowCoverLetter(true)}
               />
